@@ -2,24 +2,23 @@ package week4;
 
 public class StringPlay {
     public static void main(String[] args) {
-        // Declare and initialize strings
-        String college = "Leeds Beckett University";
-        String town = "Anytown, UK";
+    	         String college = new String ("Leeds Beckett University"); 
 
-        // Find the length of the college string
-        int stringLength = college.length();
-        System.out.println(college + " contains " + stringLength + " characters.");
+         String town = new String("Anytown, UK"); 
 
-        // Convert the string to uppercase
-        String upperCaseCollege = college.toUpperCase();
-        System.out.println("Uppercase: " + upperCaseCollege);
+         int stringLength;
+         String change1, change2, change3;
 
-        // Replace all lowercase 'e' with '*'
-        String replacedString = college.replace('e', '*');
-        System.out.println("Replaced 'e' with '*': " + replacedString);
+         stringLength = college.length(); 
 
-        // Concatenate college and town
-        String finalString = college.concat(town);
-        System.out.println("The final string is " + finalString);
-    }
-}
+         System.out.println(college + " contains " + stringLength + " characters.");
+
+         change1 = college.toUpperCase(); 
+
+         change2 = change1.replace('E', '*'); 
+
+         change3 = college.concat(town); 
+
+         System.out.println("The final string is " + change3);
+      }
+   }

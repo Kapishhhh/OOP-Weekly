@@ -12,16 +12,13 @@ public class Diceroll {
 		        Scanner scanner = new Scanner(System.in);
 		        Random random = new Random();
 
-		        // Prompt user for dice sides
 		        System.out.print("How many sides does die 1 have? ");
 		        int sides1 = scanner.nextInt();
 		        System.out.print("How many sides does die 2 have? ");
 		        int sides2 = scanner.nextInt();
 
-		        // Variables to store sum of rolls
 		        int sum1 = 0, sum2 = 0;
 
-		        // Roll the dice 3 times
 		        for (int i = 1; i <= 3; i++) {
 		            int roll1 = random.nextInt(sides1) + 1;
 		            int roll2 = random.nextInt(sides2) + 1;
@@ -33,7 +30,6 @@ public class Diceroll {
 		            System.out.println("Die 2 roll " + i + " = " + roll2);
 		        }
 
-		        // averages
 		        double avg1 = sum1 / 3.0;
 		        double avg2 = sum2 / 3.0;
 
