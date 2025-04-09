@@ -18,7 +18,6 @@ public class Sphere {
         this.diameter = diameter;
     }
 
-    
     public double getVolume() {
         double radius = diameter / 2.0;
         return (4.0 / 3.0) * Math.PI * Math.pow(radius, 3);
@@ -31,8 +30,22 @@ public class Sphere {
 
     @Override
     public String toString() {
-        return "Sphere [Diameter: " + diameter + 
-               ", Volume: " + getVolume() + 
-               ", Surface Area: " + getSurfaceArea() + "]";
+        return "Sphere [Diameter: " + diameter + ", Volume: " + getVolume() + ", Surface Area: " + getSurfaceArea() + "]";
+    }
+
+    public static void main(String[] args) {
+        // Creating Sphere objects
+        Sphere sphere1 = new Sphere(10);
+        Sphere sphere2 = new Sphere(20);
+
+        // Display detail
+        System.out.println("Initial Spheres:");
+        System.out.println(sphere1);
+        System.out.println(sphere2);
+
+        sphere1.setDiameter(20);
+
+           System.out.println("\nAfter Updating Diameter of Sphere1:");
+        System.out.println(sphere1);
     }
 }

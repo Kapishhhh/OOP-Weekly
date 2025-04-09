@@ -32,10 +32,10 @@ class Card {
 class Deck {
     private List<Card> cards;
 
-    // Constructor to initialize
+    // Constructor to initialize it 
     public Deck() {
         cards = new ArrayList<>();
-        String[] suits = {"Hearts", "Diamonds", "Clubs", "Spades"};
+        String[] suits = {"Clubs", " Spades", "Diamonds", "Hearts"};
         String[] values = {"2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King", "Ace"};
         
         for (String suit : suits) {

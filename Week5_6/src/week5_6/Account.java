@@ -40,7 +40,7 @@ public class Account {
         }
     }
 
-    // Withdraw method
+    // Wwithdraw method
     public boolean withdraw(double amount) {
         if (amount > 0 && amount <= balance) {
             balance -= amount;
@@ -53,9 +53,7 @@ public class Account {
 
     @Override
     public String toString() {
-        return "Account Name: " + name +
-               "\nAccount Number: " + accountNumber +
-               "\nBalance: $" + String.format("%.2f", balance);
+        return "Account Name: " + name + "Account Number: " + accountNumber +"Balance: $" + String.format("%.2f", balance);
     }
 
     public static void main(String[] args) {
@@ -63,12 +61,12 @@ public class Account {
         System.out.println("Initial Account Details:\n" + acc1);
 
         acc1.deposit(500);
-        System.out.println("\nAfter depositing $500:\n" + acc1);
+        System.out.println("After depositing $500:\n" + acc1);
 
         acc1.withdraw(200);
-        System.out.println("\nAfter withdrawing $200:\n" + acc1);
+        System.out.println("After withdrawing $200:\n" + acc1);
 
         acc1.withdraw(400); 
-        System.out.println("\nFinal Account Details:\n" + acc1);
+        System.out.println("Final Account Details:\n" + acc1);
     }
 }
