@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-class Card {
+class Card {	
     private String suit;
     private String value;
 
